@@ -63,7 +63,7 @@ var refund = function(){
 }
 
 var precreate = function(){
-	alipay.cancel({
+	alipay.precreate({
 		biz_content:{
 			out_trade_no:"xxxx",
 			subject:"测试标题",

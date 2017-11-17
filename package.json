@@ -1,5 +1,5 @@
 {
-  "name": "node-alipay-face2face-sdk",
+  "name": "node-alipay-f2f-sdk",
   "version": "1.0.0",
   "description": "alipay_face2face sdk for nodejs",
   "main": "index.js",
@@ -12,5 +12,17 @@
     "node-alipay"
   ],
   "author": "hjpenguin",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ice-penguin/node_alipay_face2face.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ice-penguin/node_alipay_face2face/issues"
+  },
+  "homepage": "https://github.com/ice-penguin/node_alipay_face2face#readme"
 }
