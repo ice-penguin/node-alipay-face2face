@@ -17,6 +17,10 @@
     "lib": "lib",
     "test": "test"
   },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "request": "^2.83.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ice-penguin/node_alipay_face2face.git"
