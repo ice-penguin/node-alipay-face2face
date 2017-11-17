@@ -1,6 +1,10 @@
 ## 安装
 
+使用npm安装
+
 	npm install node-alipay-f2f-sdk
+
+从github[下载](https://github.com/ice-penguin/node_alipay_face2face/)
 
 ## 模块说明
 
