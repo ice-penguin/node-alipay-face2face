@@ -1,0 +1,16 @@
+{
+  "name": "node-alipay-face2face-sdk",
+  "version": "1.0.0",
+  "description": "alipay_face2face sdk for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node-alipay-sdk",
+    "face2face",
+    "node-alipay"
+  ],
+  "author": "hjpenguin",
+  "license": "ISC"
+}
