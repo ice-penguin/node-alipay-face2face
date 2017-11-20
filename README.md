@@ -1,14 +1,22 @@
-## 安装
+## Install 安装
 
-使用npm安装
+
+>use npm isntall
+>
+>使用npm安装 
 
 	npm install node-alipay-f2f-sdk
 
-从github[下载](https://github.com/ice-penguin/node_alipay_face2face/)
+>[download](https://github.com/ice-penguin/node_alipay_face2face/) from github
+>
+>从github[下载](https://github.com/ice-penguin/node_alipay_face2face/)
 
-## 模块说明
+## Introduce 模块说明 
 
-该模块目前仅支持支付宝RSA加密方式，支持面对面支付大部分接口，biz_content参数同支付宝，见[支付宝文档](https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.XVhLo4&treeId=193&articleId=105203&docType=1)，公共请求参数只需设置notify_url，app_auth_token，也可不进行设置，请求结果返回promise对象
+>该模块目前仅支持支付宝RSA加密方式，支持面对面支付大部分接口，biz_content参数同支付宝，见[支付宝文档](https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.XVhLo4&treeId=193&articleId=105203&docType=1)，公共请求参数只需设置notify_url，app_auth_token，也可不进行设置，请求结果返回promise对象
+
+## Set RSA(SHA1) public key 加密公钥设置
+>进入应用页面设置接口加签方式，使用其他加签方式，上传公钥证书，或者复制年黏贴公钥证书（复制黏贴注意去掉多余空格）
 
 ## 使用说明
 
