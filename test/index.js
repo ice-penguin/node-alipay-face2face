@@ -50,7 +50,7 @@ var cancel = function(){
 }
 
 var refund = function(){
-	alipay.cancel({
+	alipay.refund({
 		biz_content:{
 			out_trade_no:"xxxx",
 			refund_amount:0.01

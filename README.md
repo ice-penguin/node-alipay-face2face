@@ -18,9 +18,9 @@
 ## Set RSA(SHA1) public key 加密公钥设置
 >进入应用页面设置接口加签方式，使用其他加签方式，上传公钥证书，或者复制年黏贴公钥证书（复制黏贴注意去掉多余空格）
 
-## 使用说明
+## Sample example  使用说明 
 
-### 初始化支付宝客户端
+### init Client 初始化支付宝客户端
 
 	var alipay=require('node-alipay-f2f-sdk').initClient({
 		private_key:__dirname+"/rsa_private_key.pem",//您的应用私钥文件，必填
@@ -28,7 +28,7 @@
 		notify_url:"xxx"//支付宝通知地址，若具体请求中不填写，默认使用此地址
 	});
 
-### 统一收单交易支付接口（条码支付）
+### Pay(bar_code,wave_code ) 统一收单交易支付接口（条码支付）
 	
 	alipay.pay({
 		notify_url："xxx",//若填写此参数，以此参数为准，初始化的参数不生效
@@ -52,7 +52,7 @@
 		console.log(body);
 	})
 
-### 统一收单线下交易查询
+### Query 统一收单线下交易查询
 
 	alipay.query({
 		biz_content:{
@@ -63,7 +63,7 @@
 		console.log(body);
 	})
 
-### 统一收单交易撤销接口
+### Cancel 统一收单交易撤销接口
 
 	alipay.cancel({
 		biz_content:{
@@ -74,9 +74,9 @@
 		console.log(body);
 	})
 
-### 统一收单交易退款接口
+### Refund 统一收单交易退款接口
 
-	alipay.cancel({
+	alipay.refund({
 		biz_content:{
 			out_trade_no:"xxxx",
 			refund_amount:0.01
@@ -86,7 +86,7 @@
 		console.log(body);
 	})
 
-### 统一收单线下交易预创建（扫码支付）
+### Code_pay 统一收单线下交易预创建（扫码支付）
 
 	alipay.precreate({
 		biz_content:{
