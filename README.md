@@ -74,14 +74,20 @@
 		"total_amount"//订单总金额，单位为元，精确到小数点后两位
 	}
  */
-alipay.query({
-	biz_content:{
-		out_trade_no:"xxx"
-	}
-})
-.then(function(body){
-	console.log(body);
-})
+var payH5 = function(){
+	alipay.payH5({
+		return_url:"http://www.baidu.com",
+		biz_content:{
+			out_trade_no:"10013",
+			subject:"测试标题",
+			total_amount:0.01
+		}
+	})
+	.then(function(body){
+		console.log(body);
+	})
+	
+}
 ```
 
 ### precreate 统一收单线下交易预创建

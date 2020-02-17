@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ice-penguin/node_alipay_face2face.git"
+    "url": "git+https://github.com/ice-penguin/node-alipay-face2face.git"
   },
   "bugs": {
-    "url": "https://github.com/ice-penguin/node_alipay_face2face/issues"
+    "url": "https://github.com/ice-penguin/node-alipay-face2face/issues"
   },
-  "homepage": "https://github.com/ice-penguin/node_alipay_face2face#readme"
+  "homepage": "https://github.com/ice-penguin/node-alipay-face2face#readme"
 }
