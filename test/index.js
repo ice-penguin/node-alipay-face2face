@@ -91,6 +91,33 @@ var precreate = function(){
 }
 
 /**
+ * 统一收单交易创建（小程序 JSAPI）
+ * biz_content:{
+ *		"out_trade_no",
+ *		"total_amount",
+ *		"subject",
+ *		"op_app_id",//拉起收银台的小程序 appid
+ *		"buyer_id",//与 buyer_open_id 二选一
+ *		"buyer_open_id",
+ *		"time_expire"//yyyy-MM-dd HH:mm:ss，可选
+ * }
+ */
+var create = function(){
+	alipay.create({
+		biz_content:{
+			out_trade_no:"10014",
+			subject:"测试标题",
+			total_amount:0.01,
+			op_app_id:"2021000000000000",
+			buyer_id:"2088000000000000"
+		}
+	})
+	.then(function(body){
+		console.log(body);
+	})
+}
+
+/**
  * app支付接口
  * @author penguinhj
  * @DateTime 2019-09-03T10:12:39+0800
